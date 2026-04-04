@@ -1,0 +1,2171 @@
+<!DOCTYPE html>
+<html lang="ka">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>აზომვითი ნახაზი და გეოდეზია თბილისში | TopGraph</title>
+    <meta
+      name="description"
+      content="აზომვითი ნახაზი, ბინის აზომვა, გეოდეზია და ტოპო გადაღება თბილისში. სწრაფი ადგილზე გასვლა, რეესტრისთვის მზად ნახაზი, უფასო წინასწარი შეფასება."
+    />
+    <link rel="canonical" href="https://topgraph.ge/" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <link rel="icon" type="image/png" href="/assets/favicon.png" />
+    <link rel="apple-touch-icon" href="/assets/logo.png" />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <meta name="theme-color" content="#3b318f" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="alternate" hreflang="ka-GE" href="https://topgraph.ge/" />
+    <link rel="alternate" hreflang="en" href="https://topgraph.ge/en/" />
+    <link rel="alternate" hreflang="x-default" href="https://topgraph.ge/" />
+    <meta name="geo.region" content="GE-TB" />
+    <meta name="geo.placename" content="Tbilisi, Georgia" />
+    <meta name="geo.position" content="41.7151;44.8271" />
+    <meta name="ICBM" content="41.7151,44.8271" />
+
+    <meta
+      property="og:title"
+      content="აზომვითი ნახაზი და გეოდეზია თბილისში | TopGraph"
+    />
+    <meta
+      property="og:description"
+      content="აზომვითი ნახაზი, ბინის აზომვა, გეოდეზია და ტოპო გადაღება თბილისში."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://topgraph.ge/" />
+    <meta property="og:locale" content="ka_GE" />
+    <meta property="og:image" content="https://topgraph.ge/assets/facebook_cover_photo_1.png" />
+    <meta property="og:site_name" content="TopGraph" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="აზომვითი ნახაზი და გეოდეზია თბილისში | TopGraph"
+    />
+    <meta
+      name="twitter:description"
+      content="აზომვითი ნახაზი, ბინის აზომვა, გეოდეზია და ტოპო გადაღება თბილისში."
+    />
+    <meta name="twitter:image" content="https://topgraph.ge/assets/facebook_cover_photo_1.png" />
+
+    <style>
+      :root {
+        --bg: #f5f4fb;
+        --surface: rgba(255, 255, 255, 0.88);
+        --ink: #221b52;
+        --ink-soft: #4b4679;
+        --line: rgba(59, 49, 143, 0.14);
+        --primary: #3b318f;
+        --primary-deep: #271d67;
+        --accent: #6b62d8;
+        --accent-deep: #5349bc;
+        --success: #5d53c7;
+        --shadow: 0 22px 65px rgba(39, 29, 103, 0.12);
+        --radius-lg: 28px;
+        --radius-md: 20px;
+        --container: 1180px;
+        --header-offset: 88px;
+        --font-display: "Avenir Next", "Segoe UI", "Noto Sans Georgian", Arial, sans-serif;
+        --font-body: "Segoe UI", "Noto Sans Georgian", Arial, sans-serif;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        font-family: var(--font-body);
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top left, rgba(59, 49, 143, 0.18), transparent 34%),
+          radial-gradient(circle at top right, rgba(107, 98, 216, 0.2), transparent 28%),
+          linear-gradient(180deg, #fbfaff 0%, #f0effa 100%);
+        line-height: 1.6;
+        min-width: 320px;
+      }
+
+      img,
+      svg {
+        display: block;
+        max-width: 100%;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      button,
+      input,
+      select,
+      textarea {
+        font: inherit;
+      }
+
+      :target {
+        scroll-margin-top: calc(var(--header-offset) + 18px);
+      }
+
+      .skip-link {
+        position: absolute;
+        left: 16px;
+        top: -48px;
+        padding: 10px 14px;
+        border-radius: 10px;
+        background: var(--primary-deep);
+        color: #fff;
+        z-index: 200;
+      }
+
+      .skip-link:focus {
+        top: 16px;
+      }
+
+      .shell {
+        position: relative;
+        overflow: clip;
+      }
+
+      .shell::before,
+      .shell::after {
+        content: "";
+        position: absolute;
+        pointer-events: none;
+        z-index: -1;
+      }
+
+      .shell::before {
+        width: 44rem;
+        height: 44rem;
+        right: -18rem;
+        top: 9rem;
+        border-radius: 50%;
+        background:
+          radial-gradient(circle, rgba(59, 49, 143, 0.16) 0%, rgba(59, 49, 143, 0.02) 54%, transparent 72%);
+      }
+
+      .shell::after {
+        left: -14rem;
+        bottom: 15rem;
+        width: 34rem;
+        height: 34rem;
+        border-radius: 50%;
+        background:
+          radial-gradient(circle, rgba(107, 98, 216, 0.13) 0%, rgba(107, 98, 216, 0.02) 62%, transparent 74%);
+      }
+
+      .container {
+        width: min(calc(100% - 32px), var(--container));
+        margin: 0 auto;
+      }
+
+      .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        backdrop-filter: blur(16px);
+        background: rgba(248, 251, 255, 0.78);
+        border-bottom: 1px solid rgba(16, 32, 51, 0.08);
+      }
+
+      .site-header .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 14px;
+        min-height: var(--header-offset);
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 14px;
+      }
+
+      .brand-mark {
+        width: 62px;
+        height: 62px;
+        border-radius: 18px;
+        overflow: hidden;
+        background: #fff;
+        box-shadow: 0 10px 24px rgba(11, 35, 61, 0.14);
+        position: relative;
+        flex: 0 0 62px;
+      }
+
+      .brand-mark::before,
+      .brand-mark::after {
+        content: none;
+      }
+
+      .brand-mark img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .brand-copy strong,
+      .brand-copy span {
+        display: block;
+      }
+
+      .brand-copy strong {
+        font-family: var(--font-display);
+        font-size: 1rem;
+        font-weight: 800;
+        letter-spacing: 0.02em;
+      }
+
+      .brand-copy span {
+        color: var(--ink-soft);
+        font-size: 0.76rem;
+      }
+
+      .menu-toggle,
+      .mobile-menu-backdrop,
+      .mobile-menu {
+        display: none;
+      }
+
+      .site-nav {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+      }
+
+      .site-nav a {
+        color: var(--ink-soft);
+        font-size: 0.88rem;
+        font-weight: 600;
+        white-space: nowrap;
+      }
+
+      .header-actions {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .menu-toggle {
+        width: 52px;
+        height: 52px;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 5px;
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.92);
+        box-shadow: 0 10px 28px rgba(11, 35, 61, 0.12);
+        cursor: pointer;
+      }
+
+      .menu-toggle span {
+        width: 18px;
+        height: 2px;
+        border-radius: 999px;
+        background: var(--ink);
+        transition: transform 0.2s ease, opacity 0.2s ease;
+      }
+
+      body.menu-open .menu-toggle span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+      }
+
+      body.menu-open .menu-toggle span:nth-child(2) {
+        opacity: 0;
+      }
+
+      body.menu-open .menu-toggle span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+      }
+
+      .lang-switch {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 6px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.74);
+      }
+
+      .lang-switch a {
+        min-width: 38px;
+        min-height: 34px;
+        padding: 0 10px;
+        border-radius: 999px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.76rem;
+        font-weight: 800;
+        color: var(--ink-soft);
+      }
+
+      .lang-switch a.is-active {
+        background: linear-gradient(135deg, var(--primary) 0%, var(--primary-deep) 100%);
+        color: #fff;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        min-height: 46px;
+        padding: 0 16px;
+        border-radius: 999px;
+        border: 1px solid transparent;
+        font-weight: 700;
+        font-size: 0.88rem;
+        transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+        cursor: pointer;
+        text-align: center;
+        white-space: nowrap;
+      }
+
+      .btn:hover,
+      .btn:focus-visible {
+        transform: translateY(-1px);
+      }
+
+      .site-nav a:hover,
+      .site-nav a:focus-visible {
+        transform: translateY(-1px);
+        color: var(--primary);
+      }
+
+      .btn-primary {
+        background: linear-gradient(135deg, var(--accent) 0%, #847ceb 100%);
+        color: #fff;
+        box-shadow: 0 16px 40px rgba(242, 108, 54, 0.25);
+      }
+
+      .btn-primary:hover,
+      .btn-primary:focus-visible,
+      .btn-dark:hover,
+      .btn-dark:focus-visible {
+        color: #fff;
+      }
+
+      .btn-secondary {
+        background: rgba(255, 255, 255, 0.76);
+        border-color: rgba(18, 58, 100, 0.14);
+        color: var(--primary);
+      }
+
+      .btn-dark {
+        background: linear-gradient(135deg, var(--primary) 0%, var(--primary-deep) 100%);
+        color: #fff;
+        box-shadow: 0 18px 40px rgba(18, 58, 100, 0.2);
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 16px;
+        border-radius: 999px;
+        background: rgba(18, 58, 100, 0.08);
+        color: var(--primary);
+        font-size: 0.84rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+
+      .eyebrow::before {
+        content: "";
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--accent);
+        box-shadow: 0 0 0 7px rgba(242, 108, 54, 0.12);
+      }
+
+      .hero {
+        padding: 54px 0 42px;
+      }
+
+      .hero-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1.06fr) minmax(320px, 0.94fr);
+        gap: 28px;
+        align-items: stretch;
+      }
+
+      .hero-copy,
+      .hero-panel {
+        min-width: 0;
+      }
+
+      .hero-copy {
+        padding: 32px 0 8px;
+      }
+
+      .breadcrumb {
+        display: inline-flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 20px 0 0;
+        padding: 0;
+        list-style: none;
+        color: var(--ink-soft);
+        font-size: 0.9rem;
+      }
+
+      .breadcrumb li:not(:last-child)::after {
+        content: "/";
+        margin-left: 10px;
+        color: rgba(76, 96, 117, 0.6);
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: var(--font-display);
+        line-height: 1.1;
+        margin: 0;
+        letter-spacing: -0.02em;
+      }
+
+      h1 {
+        margin-top: 18px;
+        font-size: clamp(2rem, 4vw, 3.85rem);
+        max-width: 14ch;
+      }
+
+      .hero-copy p {
+        max-width: 64ch;
+        margin: 22px 0 0;
+        font-size: 1.08rem;
+        color: var(--ink-soft);
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        margin-top: 28px;
+      }
+
+      .hero-points,
+      .chip-list,
+      .proof-grid,
+      .service-grid,
+      .reasons-grid,
+      .process-grid,
+      .result-grid,
+      .quote-grid,
+      .faq-grid,
+      .contact-grid,
+      .footer-grid,
+      .service-links {
+        display: grid;
+        gap: 18px;
+      }
+
+      .hero-points {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        margin-top: 32px;
+      }
+
+      .chip-list {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        margin-top: 28px;
+      }
+
+      .pill,
+      .fact,
+      .service-card,
+      .reason-card,
+      .process-step,
+      .result-card,
+      .quote-card,
+      .faq-card,
+      .contact-card,
+      .footer-card,
+      .panel-card,
+      .signal-bar {
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.88);
+        box-shadow: var(--shadow);
+        backdrop-filter: blur(12px);
+      }
+
+      .pill {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        min-height: 72px;
+        padding: 14px 16px;
+        border-radius: 18px;
+        color: var(--ink-soft);
+        font-weight: 700;
+      }
+
+      .fact {
+        padding: 18px 18px 20px;
+        border-radius: 22px;
+      }
+
+      .fact strong {
+        display: block;
+        font-size: 1.26rem;
+        color: var(--primary);
+        margin-bottom: 6px;
+      }
+
+      .fact span {
+        color: var(--ink-soft);
+        font-size: 0.95rem;
+      }
+
+      .hero-panel {
+        position: relative;
+      }
+
+      .hero-panel::before {
+        content: "";
+        position: absolute;
+        inset: 18px 22px auto auto;
+        width: 160px;
+        height: 160px;
+        border-radius: 28px;
+        opacity: 0.2;
+        background:
+          linear-gradient(rgba(255, 255, 255, 0.6) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255, 255, 255, 0.6) 1px, transparent 1px);
+        background-size: 18px 18px;
+        transform: rotate(8deg);
+      }
+
+      .panel-card {
+        position: relative;
+        height: 100%;
+        padding: 30px;
+        border-radius: var(--radius-lg);
+        overflow: hidden;
+        background:
+          linear-gradient(160deg, rgba(10, 31, 55, 0.98) 0%, rgba(18, 58, 100, 0.96) 64%, rgba(15, 139, 109, 0.92) 100%);
+        color: #fff;
+      }
+
+      .panel-card > * {
+        position: relative;
+        z-index: 1;
+      }
+
+      .panel-card::after {
+        content: "";
+        position: absolute;
+        inset: auto -40px -54px auto;
+        width: 240px;
+        height: 240px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(242, 108, 54, 0.42) 0%, rgba(242, 108, 54, 0.05) 62%, transparent 75%);
+      }
+
+      .panel-topline {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 18px;
+        color: rgba(255, 255, 255, 0.82);
+        font-size: 0.9rem;
+      }
+
+      .panel-topline strong {
+        padding: 6px 10px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.08);
+        color: #fff;
+        font-size: 0.78rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .panel-card h2 {
+        font-size: clamp(1.5rem, 2.6vw, 2.3rem);
+        max-width: 12ch;
+      }
+
+      .panel-card p {
+        margin: 14px 0 0;
+        color: rgba(255, 255, 255, 0.84);
+      }
+
+      .proof-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        margin-top: 28px;
+      }
+
+      .proof {
+        padding: 18px;
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+      }
+
+      .proof strong {
+        display: block;
+        font-size: 1.3rem;
+        margin-bottom: 6px;
+      }
+
+      .proof span {
+        font-size: 0.92rem;
+        color: rgba(255, 255, 255, 0.74);
+      }
+
+      .panel-list {
+        display: grid;
+        gap: 12px;
+        margin: 28px 0 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .panel-list li {
+        display: flex;
+        gap: 12px;
+        align-items: flex-start;
+        color: rgba(255, 255, 255, 0.9);
+      }
+
+      .panel-list li::before {
+        content: "•";
+        color: var(--accent);
+        font-size: 1.5rem;
+        line-height: 1;
+      }
+
+      .section {
+        padding: 48px 0;
+      }
+
+      .section-head {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: end;
+        justify-content: space-between;
+        gap: 18px;
+        margin-bottom: 26px;
+      }
+
+      .section-head p {
+        max-width: 58ch;
+        margin: 0;
+        color: var(--ink-soft);
+      }
+
+      h2 {
+        font-size: clamp(1.6rem, 2.6vw, 2.6rem);
+        max-width: 18ch;
+      }
+
+      .signal-bar {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 14px;
+        padding: 18px;
+        border-radius: 24px;
+        margin-bottom: 22px;
+      }
+
+      .signal-bar span {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--ink-soft);
+        font-weight: 700;
+      }
+
+      .signal-bar span::before {
+        content: "";
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background: var(--success);
+        box-shadow: 0 0 0 8px rgba(15, 139, 109, 0.1);
+      }
+
+      .service-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .service-card {
+        padding: 26px;
+        border-radius: var(--radius-md);
+      }
+
+      .card-icon {
+        display: inline-grid;
+        place-items: center;
+        width: 60px;
+        height: 60px;
+        border-radius: 18px;
+        margin-bottom: 18px;
+        background: linear-gradient(145deg, rgba(18, 58, 100, 0.12), rgba(242, 108, 54, 0.14));
+        color: var(--primary);
+      }
+
+      .card-icon svg {
+        width: 28px;
+        height: 28px;
+      }
+
+      .service-card h3 {
+        font-size: 1.42rem;
+        margin-bottom: 10px;
+      }
+
+      .service-card p,
+      .service-card li,
+      .reason-card p,
+      .process-step p,
+      .result-card p,
+      .quote-card p,
+      .faq-card p,
+      .contact-card p,
+      .footer-card p {
+        color: var(--ink-soft);
+      }
+      .card-list,
+      .contact-list,
+      .footer-links,
+      .mini-list {
+        margin: 18px 0 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        gap: 12px;
+      }
+
+      .card-list li,
+      .contact-list li,
+      .footer-links li,
+      .mini-list li {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+      }
+
+      .card-list li::before,
+      .mini-list li::before,
+      .contact-list li::before {
+        content: "";
+        flex: 0 0 10px;
+        width: 10px;
+        height: 10px;
+        margin-top: 9px;
+        border-radius: 50%;
+        background: linear-gradient(145deg, var(--accent), #ff9a64);
+      }
+
+      .reasons-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .reason-card,
+      .process-step,
+      .result-card,
+      .quote-card,
+      .faq-card,
+      .contact-card,
+      .footer-card {
+        padding: 24px;
+        border-radius: var(--radius-md);
+      }
+
+      .reason-card strong,
+      .result-kicker,
+      .quote-highlight {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 14px;
+        color: var(--primary);
+        font-size: 0.84rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+
+      .reason-card strong::before,
+      .result-kicker::before,
+      .quote-highlight::before {
+        content: "";
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--accent);
+      }
+
+      .process-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+
+      .process-step {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .step-no {
+        display: inline-grid;
+        place-items: center;
+        width: 56px;
+        height: 56px;
+        border-radius: 16px;
+        margin-bottom: 18px;
+        background: linear-gradient(145deg, var(--primary) 0%, var(--primary-deep) 100%);
+        color: #fff;
+        font-size: 1.18rem;
+        font-weight: 800;
+      }
+
+      .result-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .result-card h3 {
+        font-size: 1.34rem;
+        margin-bottom: 10px;
+      }
+
+      .result-meta {
+        margin-top: 18px;
+        padding-top: 18px;
+        border-top: 1px solid rgba(16, 32, 51, 0.12);
+      }
+
+      .quote-grid {
+        grid-template-columns: 1.02fr 0.98fr;
+        align-items: stretch;
+      }
+
+      .quote-card.dark {
+        background:
+          linear-gradient(160deg, rgba(10, 31, 55, 0.98) 0%, rgba(18, 58, 100, 0.96) 100%);
+        color: #fff;
+        border-color: rgba(255, 255, 255, 0.08);
+      }
+
+      .quote-card.dark p,
+      .quote-card.dark li {
+        color: rgba(255, 255, 255, 0.78);
+      }
+
+      .quote-badges {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 18px;
+      }
+
+      .quote-badge {
+        padding: 10px 14px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        font-size: 0.9rem;
+        font-weight: 700;
+      }
+
+      .faq-card details {
+        border-top: 1px solid rgba(16, 32, 51, 0.08);
+        padding: 18px 0;
+      }
+
+      .faq-card details:first-of-type {
+        border-top: 0;
+        padding-top: 0;
+      }
+
+      .faq-card summary {
+        list-style: none;
+        cursor: pointer;
+        font-weight: 800;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 14px;
+      }
+
+      .faq-card summary::-webkit-details-marker {
+        display: none;
+      }
+
+      .faq-card summary::after {
+        content: "+";
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        display: inline-grid;
+        place-items: center;
+        background: rgba(18, 58, 100, 0.08);
+        color: var(--primary);
+        flex: 0 0 auto;
+      }
+
+      .faq-card details[open] summary::after {
+        content: "−";
+      }
+
+      .faq-card p {
+        margin: 12px 0 0;
+      }
+
+      .contact-grid {
+        grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+      }
+
+      .contact-stack {
+        display: grid;
+        gap: 18px;
+      }
+
+      .contact-card strong,
+      .footer-card strong {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 1.1rem;
+      }
+
+      .contact-card .btn-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 18px;
+      }
+
+      .quote-form {
+        display: grid;
+        gap: 16px;
+      }
+
+      .form-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .field {
+        display: grid;
+        gap: 8px;
+      }
+
+      .field label {
+        font-size: 0.9rem;
+        font-weight: 700;
+        color: var(--ink);
+      }
+
+      .field input,
+      .field select,
+      .field textarea {
+        width: 100%;
+        padding: 15px 16px;
+        border: 1px solid rgba(16, 32, 51, 0.14);
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.98);
+        color: var(--ink);
+      }
+
+      .field textarea {
+        min-height: 150px;
+        resize: vertical;
+      }
+
+      .form-note {
+        margin: 0;
+        color: var(--ink-soft);
+        font-size: 0.92rem;
+      }
+
+      .footer {
+        padding: 24px 0 98px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1.15fr 0.85fr 0.8fr;
+      }
+
+      .service-links {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .footer-bottom {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 14px;
+        padding-top: 22px;
+        margin-top: 22px;
+        border-top: 1px solid rgba(16, 32, 51, 0.08);
+        color: var(--ink-soft);
+        font-size: 0.92rem;
+      }
+
+      .footer-logo {
+        width: 88px;
+        height: 88px;
+        margin-bottom: 12px;
+        border-radius: 22px;
+        object-fit: cover;
+        box-shadow: 0 12px 28px rgba(11, 35, 61, 0.12);
+      }
+
+      .mobile-bar {
+        position: fixed;
+        left: 12px;
+        right: 12px;
+        bottom: 12px;
+        z-index: 120;
+        display: none;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 10px;
+        padding: 10px;
+        border: 1px solid rgba(16, 32, 51, 0.08);
+        border-radius: 22px;
+        background: rgba(255, 255, 255, 0.92);
+        backdrop-filter: blur(14px);
+        box-shadow: 0 20px 45px rgba(11, 35, 61, 0.2);
+      }
+
+      .mobile-bar a {
+        min-height: 48px;
+        border-radius: 14px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.92rem;
+        font-weight: 800;
+      }
+
+      .mobile-bar a:nth-child(1) {
+        background: rgba(18, 58, 100, 0.08);
+        color: var(--primary);
+      }
+
+      .mobile-bar a:nth-child(2) {
+        background: rgba(15, 139, 109, 0.14);
+        color: var(--success);
+      }
+
+      .mobile-bar a:nth-child(3) {
+        background: linear-gradient(135deg, var(--accent) 0%, #ff9469 100%);
+        color: #fff;
+      }
+
+      .mobile-menu-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 14px;
+      }
+
+      .mobile-menu-label {
+        font-size: 0.84rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--ink-soft);
+      }
+
+      .mobile-menu-close {
+        width: 42px;
+        height: 42px;
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        background: rgba(248, 251, 255, 0.94);
+        color: var(--ink);
+        font-size: 1.4rem;
+        line-height: 1;
+        cursor: pointer;
+      }
+
+      .mobile-menu-nav {
+        display: grid;
+        gap: 6px;
+      }
+
+      .mobile-menu-nav a {
+        padding: 14px 16px;
+        border-radius: 18px;
+        background: rgba(245, 247, 255, 0.92);
+        color: var(--ink);
+        font-size: 0.98rem;
+        font-weight: 700;
+      }
+
+      .mobile-menu-actions {
+        display: grid;
+        gap: 10px;
+      }
+
+      .mobile-menu .lang-switch {
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      .mobile-menu .lang-switch a {
+        flex: 1 1 0;
+      }
+
+      .mobile-menu-contact {
+        display: grid;
+        gap: 6px;
+        padding: 14px 16px;
+        border-radius: 18px;
+        border: 1px solid rgba(16, 32, 51, 0.08);
+        background: rgba(248, 251, 255, 0.92);
+      }
+
+      .mobile-menu-contact a {
+        color: var(--ink);
+        font-size: 0.94rem;
+        font-weight: 600;
+      }
+
+      @media (max-width: 1120px) {
+        .hero-grid,
+        .quote-grid,
+        .contact-grid,
+        .footer-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .hero-copy {
+          padding-top: 18px;
+        }
+
+        .signal-bar,
+        .hero-points,
+        .proof-grid,
+        .service-grid,
+        .reasons-grid,
+        .process-grid,
+        .result-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 880px) {
+        :root {
+          --header-offset: 74px;
+        }
+
+        body.menu-open {
+          overflow: hidden;
+        }
+
+        .site-header .container {
+          gap: 12px;
+          min-height: 74px;
+        }
+
+        .brand {
+          min-width: 0;
+        }
+
+        .brand-mark {
+          width: 52px;
+          height: 52px;
+          border-radius: 16px;
+          flex-basis: 52px;
+        }
+
+        .brand-copy span {
+          display: none;
+        }
+
+        .site-nav {
+          display: none;
+        }
+
+        .header-actions {
+          display: none;
+        }
+
+        .menu-toggle {
+          display: inline-flex;
+          flex: 0 0 auto;
+        }
+
+        .mobile-menu-backdrop {
+          display: block;
+          position: fixed;
+          inset: 0;
+          z-index: 105;
+          background: rgba(9, 18, 32, 0.46);
+          opacity: 0;
+          pointer-events: none;
+          transition: opacity 0.2s ease;
+        }
+
+        .mobile-menu {
+          display: grid;
+          gap: 16px;
+          position: fixed;
+          top: calc(var(--header-offset) + 8px);
+          left: 12px;
+          right: 12px;
+          z-index: 110;
+          padding: 18px;
+          border: 1px solid rgba(16, 32, 51, 0.08);
+          border-radius: 24px;
+          background: rgba(255, 255, 255, 0.98);
+          box-shadow: 0 24px 54px rgba(11, 35, 61, 0.24);
+          opacity: 0;
+          pointer-events: none;
+          transform: translateY(-12px);
+          transition: opacity 0.2s ease, transform 0.2s ease;
+        }
+
+        body.menu-open .mobile-menu-backdrop {
+          opacity: 1;
+          pointer-events: auto;
+        }
+
+        body.menu-open .mobile-menu {
+          opacity: 1;
+          pointer-events: auto;
+          transform: translateY(0);
+        }
+
+        .chip-list,
+        .signal-bar,
+        .service-links,
+        .form-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .hero-actions,
+        .contact-card .btn-group {
+          flex-direction: column;
+          align-items: stretch;
+        }
+
+        .mobile-bar {
+          display: none !important;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .container {
+          width: min(calc(100% - 24px), var(--container));
+        }
+
+        .hero {
+          padding-top: 28px;
+        }
+
+        .section {
+          padding: 38px 0;
+        }
+
+        .hero-points,
+        .proof-grid,
+        .service-grid,
+        .reasons-grid,
+        .process-grid,
+        .result-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .panel-card,
+        .service-card,
+        .reason-card,
+        .process-step,
+        .result-card,
+        .quote-card,
+        .faq-card,
+        .contact-card,
+        .footer-card {
+          padding: 20px;
+        }
+
+        h1 {
+          max-width: 11ch;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+
+        *,
+        *::before,
+        *::after {
+          animation: none !important;
+          transition: none !important;
+        }
+      }
+    </style>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "LocalBusiness",
+            "@id": "https://topgraph.ge/#business",
+            "name": "TopGraph",
+            "alternateName": "TopGraph Tbilisi",
+            "url": "https://topgraph.ge/",
+            "image": "https://topgraph.ge/assets/logo.png",
+            "logo": "https://topgraph.ge/assets/logo.png",
+            "telephone": "+995599991165",
+            "email": "topgraph.info@gmail.com",
+            "priceRange": "$$",
+            "description": "As-built drawings, apartment and house measurement, land surveying and topographic surveys in Tbilisi, Georgia.",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Tbilisi",
+              "addressRegion": "Tbilisi",
+              "postalCode": "0108",
+              "addressCountry": "GE"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 41.7151,
+              "longitude": 44.8271
+            },
+            "areaServed": [
+              { "@type": "City", "name": "Tbilisi" },
+              { "@type": "Country", "name": "Georgia" }
+            ]
+          },
+          {
+            "@type": "Service",
+            "@id": "https://topgraph.ge/#core-service",
+            "name": "Surveying, measurement and registry-ready drawing services in Tbilisi",
+            "provider": { "@id": "https://topgraph.ge/#business" },
+            "areaServed": { "@type": "City", "name": "Tbilisi" },
+            "serviceType": [
+              "As-built drawings",
+              "Apartment measurement",
+              "Land surveying",
+              "Geodesy services",
+              "Topographic surveys"
+            ],
+            "description": "Registry-ready drawing packages, on-site measurement, cadastral support and topographic survey deliverables for apartments, houses and land parcels."
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://topgraph.ge/#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "რა არის აზომვითი ნახაზი და როდის მჭირდება?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "აზომვითი ნახაზი არის ობიექტის ფაქტობრივი ზომების და განლაგების ზუსტი ასახვა. იგი ხშირად საჭიროა საჯარო რეესტრში რეგისტრაციისთვის, ფართის დაზუსტებისთვის, გამიჯვნა-გაერთიანებისთვის, ლეგალიზაციისთვის, დიზაინისთვის და ქონების გაყიდვა-შეფასებისთვის."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "აკეთებთ ბინის აზომვას თბილისში?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "დიახ. მომსახურება მოიცავს ბინის, კერძო სახლის, სარდაფის, ავტოფარეხის და დამხმარე ფართების ზუსტ აზომვას თბილისში და მის მიმდებარე ზონებში."
+                }
+              }
+            ]
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://topgraph.ge/#breadcrumbs",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://topgraph.ge/" },
+              { "@type": "ListItem", "position": 2, "name": "Surveying Services", "item": "https://topgraph.ge/#services" },
+              { "@type": "ListItem", "position": 3, "name": "Tbilisi, Georgia", "item": "https://topgraph.ge/#contact" }
+            ]
+          }
+        ]
+      }
+    </script>
+    </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="shell" id="top">
+      <header class="site-header">
+        <div class="container">
+          <a class="brand" href="#top" aria-label="TopGraph home">
+            <span class="brand-mark" aria-hidden="true">
+              <img src="/assets/logo.png" alt="" width="62" height="62" />
+            </span>
+            <span class="brand-copy">
+              <strong>TopGraph</strong>
+              <span>თბილისი</span>
+            </span>
+          </a>
+
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="მენიუს გახსნა">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav class="site-nav" aria-label="Primary">
+            <a href="#services">სერვისები</a>
+            <a href="#why-us">რატომ ჩვენ</a>
+            <a href="#process">პროცესი</a>
+            <a href="#results">შედეგები</a>
+            <a href="#faq">კითხვები</a>
+            <a href="#contact">კონტაქტი</a>
+          </nav>
+
+          <div class="header-actions">
+            <div class="lang-switch" aria-label="ენის არჩევა">
+              <a class="is-active" href="/">KA</a>
+              <a href="/en/">EN</a>
+            </div>
+            <a class="btn btn-secondary" href="https://wa.me/995599991165">WhatsApp</a>
+            <a class="btn btn-dark" href="tel:+995599991165">დარეკვა</a>
+          </div>
+        </div>
+
+        <div class="mobile-menu-backdrop" data-menu-close></div>
+        <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+          <div class="mobile-menu-top">
+            <span class="mobile-menu-label">მენიუ</span>
+            <button class="mobile-menu-close" type="button" aria-label="მენიუს დახურვა" data-menu-close>&times;</button>
+          </div>
+
+          <nav class="mobile-menu-nav" aria-label="მობილური მენიუ">
+            <a href="#services">სერვისები</a>
+            <a href="#why-us">რატომ ჩვენ</a>
+            <a href="#process">პროცესი</a>
+            <a href="#results">შედეგები</a>
+            <a href="#faq">კითხვები</a>
+            <a href="#contact">კონტაქტი</a>
+          </nav>
+
+          <div class="mobile-menu-actions">
+            <div class="lang-switch" aria-label="ენის არჩევა">
+              <a class="is-active" href="/">KA</a>
+              <a href="/en/">EN</a>
+            </div>
+            <a class="btn btn-secondary" href="https://wa.me/995599991165">WhatsApp</a>
+            <a class="btn btn-dark" href="tel:+995599991165">დარეკვა</a>
+            <a class="btn btn-primary" href="#quote">ფასის მოთხოვნა</a>
+          </div>
+
+          <div class="mobile-menu-contact">
+            <a href="tel:+995599991165">+995 599 99 11 65</a>
+            <a href="mailto:topgraph.info@gmail.com">topgraph.info@gmail.com</a>
+          </div>
+        </div>
+      </header>
+
+      <main id="main">
+        <section class="hero">
+          <div class="container hero-grid">
+            <div class="hero-copy">
+              <span class="eyebrow">თბილისის აზომვა და გეოდეზია</span>
+              <ol class="breadcrumb" aria-label="Breadcrumb">
+                <li><a href="#top">მთავარი</a></li>
+                <li><a href="#services">აზომვითი სერვისები</a></li>
+                <li><a href="#contact">თბილისი, საქართველო</a></li>
+              </ol>
+              <h1>აზომვითი ნახაზი, ბინის აზომვა და გეოდეზია თბილისში</h1>
+              <p>
+                თუ გჭირდებათ <strong>აზომვითი ნახაზი</strong>, <strong>ბინის ან სახლის ზუსტი აზომვა</strong>,
+                <strong>მიწის აზომვა</strong>, <strong>გეოდეზიური მომსახურება</strong> ან <strong>ტოპოგრაფიული გადაღება</strong>,
+                აქ ნახავთ სწრაფ, მკაფიო და რეესტრისთვის მზად მომსახურებას. ვმუშაობთ ისე, რომ დამკვეთს ერთდროულად
+                მოუგვაროს ტექნიკური სიზუსტე, დოკუმენტაციის სანდოობა და ვადების კონტროლი.
+              </p>
+              <div class="hero-actions">
+                <a class="btn btn-primary" href="tel:+995599991165">დაგვირეკეთ ახლავე</a>
+                <a class="btn btn-secondary" href="https://wa.me/995599991165">მიიღე ფასი WhatsApp-ზე</a>
+                <a class="btn btn-secondary" href="#quote">უფასო წინასწარი შეფასება</a>
+              </div>
+
+              <div class="chip-list" aria-label="Primary search intents">
+                <div class="pill">აზომვითი ნახაზი საჯარო რეესტრისთვის</div>
+                <div class="pill">ბინის აზომვა და სახლის აზომვა</div>
+                <div class="pill">გეოდეზია, დაკვალვა, მიწის საზღვრები</div>
+                <div class="pill">ტოპოგრაფიული გადაღება და სიმაღლეები</div>
+              </div>
+
+              <div class="hero-points">
+                <article class="fact">
+                  <strong>ადგილზე გასვლა თბილისში</strong>
+                  <span>ადგილზე გასვლა ვაკე, საბურთალო, დიდი დიღომი, გლდანი, ისანი, სამგორი და მთელ თბილისში.</span>
+                </article>
+                <article class="fact">
+                  <strong>რეესტრისთვის მზად მასალა</strong>
+                  <span>მიღებთ გასაგებ ფაილებს, ზომებსა და ნახაზებს იმ ფორმატში, რაც რეალურად გჭირდებათ.</span>
+                </article>
+                <article class="fact">
+                  <strong>სწრაფი უკუკავშირი</strong>
+                  <span>წინასწარ შეფასებას და სამუშაო გეგმის დადასტურებას იღებთ სწრაფად, ზედმეტი დაყოვნების გარეშე.</span>
+                </article>
+              </div>
+            </div>
+
+            <aside class="hero-panel" aria-label="Key conversion panel">
+              <div class="panel-card">
+                <div class="panel-topline">
+                  <strong>ადგილობრივი გამოცდილება</strong>
+                  <span>თბილისის ქონების მფლობელებისთვის, არქიტექტორებისთვის, დეველოპერებისთვის და უცხოეთში მყოფი დამკვეთებისთვის.</span>
+                </div>
+                <h2>ზუსტი აზომვა, მკაფიო დოკუმენტები, ნაკლები რისკი</h2>
+                <p>
+                  კონკურენტების მთავარი სისუსტე არის ან ზედმეტად ზოგადი ტექსტი, ან გადატვირთული გვერდი. ეს გვერდი
+                  აშენებულია მაღალი განზრახვის მომხმარებლისთვის: ვინც უკვე ეძებს სიზუსტეს, ვადას და შედეგს.
+                </p>
+
+                <div class="proof-grid">
+                  <div class="proof">
+                    <strong>24-48სთ</strong>
+                    <span>ხშირი ვადა სტანდარტულ ობიექტებზე</span>
+                  </div>
+                  <div class="proof">
+                    <strong>PDF / DWG</strong>
+                    <span>ფორმატი შეთანხმებით</span>
+                  </div>
+                  <div class="proof">
+                    <strong>ონლაინ კოორდინაცია</strong>
+                    <span>ზარი, WhatsApp და ელფოსტა ერთ პროცესში</span>
+                  </div>
+                </div>
+
+                <ul class="panel-list">
+                  <li>აზომვითი ნახაზი ბინის რეგისტრაციისთვის, გამიჯვნა-გაერთიანებისთვის და ლეგალიზაციის პროცესებისთვის.</li>
+                  <li>ბინის, კერძო სახლის, სარდაფის, სხვენის, ავტოფარეხის და დამხმარე ფართების ფაქტობრივი აზომვა.</li>
+                  <li>მიწის ნაკვეთის აზომვა, გეოდეზია, დაკვალვა, წერტილების დასმა და ტოპოგრაფიული სიტუაციის ფიქსაცია.</li>
+                </ul>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="section" id="services">
+          <div class="container">
+            <div class="signal-bar" aria-label="Service differentiators">
+              <span>აზომვა ფაქტობრივ მონაცემებზე</span>
+              <span>სწრაფი წინასწარი შეფასება</span>
+              <span>დაჩქარებული სერვისი მოთხოვნით</span>
+              <span>თბილისი + საქართველო შეთანხმებით</span>
+            </div>
+
+            <div class="section-head">
+              <div>
+                <span class="eyebrow">ძირითადი სერვისები</span>
+                <h2>სერვისები, რომლებიც რეალურად მოაქვს მოთხოვნა ძიებიდან</h2>
+              </div>
+              <p>
+                კონკურენტების გვერდებზე ყველაზე ძლიერი ნაწილი იყო სერვისების ფართო ჩამონათვალი. აქ იგივე მოთხოვნები
+                გაცილებით გასაგებადაა დაჯგუფებული, რათა მომხმარებელმა 10 წამში მიხვდეს, ზუსტად რას აკეთებთ.
+              </p>
+            </div>
+
+            <div class="service-grid">
+              <article class="service-card" id="as-built-drawings">
+                <div class="card-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h10v10H4z"></path>
+                    <path d="M14 10h6v10H10v-6"></path>
+                    <path d="M7 1v3M11 1v3M1 7h3M1 11h3"></path>
+                  </svg>
+                </div>
+                <h3>აზომვითი ნახაზი</h3>
+                <p>
+                  ფაქტობრივი მდგომარეობის ზუსტი ასახვა ბინის, სახლის, კომერციული ფართის ან დამხმარე სივრცისათვის,
+                  როდესაც საჭიროა რეესტრთან, დიზაინერთან, შემფასებელთან ან არქიტექტორთან მუშაობა.
+                </p>
+                <ul class="card-list">
+                  <li>შიდა სივრცის ზომები, კედლები, ტიხრები, ღიობები, ფართობები.</li>
+                  <li>გამიჯვნა-გაერთიანების, ცვლილების ან დამტკიცების პროცესისთვის მკაფიო მასალა.</li>
+                  <li>აზომვითი ნახაზი ინტერიერის დიზაინერისთვის და რეკონსტრუქციისთვის.</li>
+                </ul>
+              </article>
+
+              <article class="service-card" id="apartment-measurement">
+                <div class="card-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 10.5 12 3l9 7.5"></path>
+                    <path d="M5 9.5V20h14V9.5"></path>
+                    <path d="M9 20v-6h6v6"></path>
+                  </svg>
+                </div>
+                <h3>ბინის და სახლის აზომვა თბილისში</h3>
+                <p>
+                  მაღალი განზრახვის საძიებო მოთხოვნების დიდი ნაწილი მოდის ფრაზებზე როგორიცაა <strong>ბინის აზომვა</strong>,
+                  <strong>სახლის აზომვა</strong> და <strong>ფართობის გადამოწმება</strong>. ეს სერვისი სწორედ ამ
+                  საჭიროებას პასუხობს.
+                </p>
+                <ul class="card-list">
+                  <li>ბინა, კერძო სახლი, დუპლექსი, იტალიური ეზო, სარდაფი, სხვენი, ავტოფარეხი.</li>
+                  <li>ქონების ყიდვა-გაყიდვამდე ფართობის დაზუსტება და რეალური მოცულობის გადამოწმება.</li>
+                  <li>მფლობელებისთვის, რომლებიც საზღვარგარეთ არიან და სჭირდებათ დისტანციური კოორდინაცია.</li>
+                </ul>
+              </article>
+              <article class="service-card" id="land-surveying">
+                <div class="card-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m3 17 5-7 4 5 4-8 5 10"></path>
+                    <path d="M3 20h18"></path>
+                    <path d="M8 3v7"></path>
+                  </svg>
+                </div>
+                <h3>გეოდეზია და მიწის აზომვა</h3>
+                <p>
+                  <strong>გეოდეზია</strong> საჭიროა მაშინ, როცა ნაკვეთის საზღვრები, წერტილები, კონტურები ან მშენებლობის
+                  გაშლის მონაცემები ზუსტად უნდა გადაიტანოთ რეალურ ადგილზე და არა სავარაუდო ნიშნულებით.
+                </p>
+                <ul class="card-list">
+                  <li>მიწის ნაკვეთის საზღვრების დადგენა, დაკვალვა, წერტილების დასმა და მონიშვნა.</li>
+                  <li>კადასტრული ინფორმაციის გადამოწმება და ადგილზე გადატანა.</li>
+                  <li>მშენებლობის დაწყებამდე ან საკუთრების დავების თავიდან ასაცილებლად ზუსტი კონტროლი.</li>
+                </ul>
+              </article>
+
+              <article class="service-card" id="topographic-survey">
+                <div class="card-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 6c2 0 2 2 4 2s2-2 4-2 2 2 4 2 2-2 4-2 2 2 4 2"></path>
+                    <path d="M3 12c2 0 2 2 4 2s2-2 4-2 2 2 4 2 2-2 4-2 2 2 4 2"></path>
+                    <path d="M3 18c2 0 2 2 4 2s2-2 4-2 2 2 4 2 2-2 4-2 2 2 4 2"></path>
+                  </svg>
+                </div>
+                <h3>ტოპოგრაფიული გადაღება</h3>
+                <p>
+                  ტოპო გადაღება გჭირდებათ მაშინ, როცა მხოლოდ საზღვარი არ კმარა და საჭიროა რელიეფი, ნიშნულები,
+                  შენობა-ნაგებობები, გზები, ღობეები, საინჟინრო ელემენტები და არსებული სიტუაციის სრული სურათი.
+                </p>
+                <ul class="card-list">
+                  <li>არქიტექტურული პროექტის, გეგმარების და საინჟინრო სამუშაოების საწყისი ბაზა.</li>
+                  <li>სიმაღლეების, ნიშნულების და სიტუაციური ელემენტების ფიქსაცია.</li>
+                  <li>მშენებლობის, რეკონსტრუქციის და ნაკვეთის განვითარების გადაწყვეტილებების დასაზუსტებლად.</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="why-us">
+          <div class="container">
+            <div class="section-head">
+              <div>
+                <span class="eyebrow">რატომ ჩვენ</span>
+                <h2>რატომ მუშაობს ეს სერვისი უკეთ, ვიდრე სტანდარტული “გაგვიკავშირდით” გვერდები</h2>
+              </div>
+              <p>
+                ნიშაში, სადაც თითქმის ყველა კონკურენტი ერთნაირ სიტყვებს წერს, რეალური უპირატესობა მოდის პროცესის
+                სიზუსტიდან, სიჩქარიდან და იმით, რამდენად მარტივად იგებს დამკვეთი რა მიიღებს.
+              </p>
+            </div>
+
+            <div class="reasons-grid">
+              <article class="reason-card">
+                <strong>რეესტრის ლოგიკა</strong>
+                <h3>სერვისი აგებულია რეესტრის და პრაქტიკული გამოყენების ლოგიკაზე</h3>
+                <p>
+                  გვერდი პირდაპირ პასუხობს იმ შემთხვევებს, როცა მომხმარებელს სჭირდება რეგისტრაცია, ცვლილება,
+                  გამიჯვნა-გაერთიანება, დამტკიცება ან ფაქტობრივი ფართის დაზუსტება.
+                </p>
+              </article>
+              <article class="reason-card">
+                <strong>მაღალი განზრახვის ტექსტი</strong>
+                <h3>ტექსტი მორგებულია რეალურ საძიებო განზრახვაზე</h3>
+                <p>
+                  გამოყენებულია ფრაზები და თემები, რომლებსაც ადამიანები ნამდვილად ეძებენ: აზომვითი ნახაზი, ბინის აზომვა,
+                  გეოდეზია, დაკვალვა, ტოპოგრაფია, მიწის საზღვრები და სიტუაციური ნახაზი.
+                </p>
+              </article>
+              <article class="reason-card">
+                <strong>ლოკალური სანდოობა</strong>
+                <h3>ადგილობრივი და სანდო ტონი თბილისის ბაზრისთვის</h3>
+                <p>
+                  ზედმეტი “AI-ური” გენერიკა ამოღებულია. ტექსტი ლოკალურია, პრაქტიკულია და გათვლილია რეალურ მფლობელზე,
+                  არქიტექტორზე, დეველოპერზე და ემიგრაციაში მყოფ დამკვეთზე.
+                </p>
+              </article>
+              <article class="reason-card">
+                <strong>სწრაფი ინტერფეისი</strong>
+                <h3>მინიმალური JS, სწრაფი ჩატვირთვა, ძლიერი პირველი შთაბეჭდილება</h3>
+                <p>
+                  არ არის მძიმე ბიბლიოთეკები, სლაიდერები და ზედმეტი ანიმაციები. ეს ნიშნავს უკეთეს სიჩქარის მაჩვენებლებს
+                  და მეტ შანსს, რომ მომხმარებელი არ გავიდეს პირველ წამებში.
+                </p>
+              </article>
+              <article class="reason-card">
+                <strong>გასაგები შეთავაზება</strong>
+                <h3>გასაგები შეთავაზება, სანამ ადამიანი დაგირეკავს</h3>
+                <p>
+                  კონკურენტების უმეტესობა ჩამოთვლის ყველაფერს, მაგრამ არ ხსნის რა სარგებელს იღებს კლიენტი. აქ თითოეული
+                  სერვისი დაკავშირებულია შედეგთან, ვადასთან და გამოყენების სცენართან.
+                </p>
+              </article>
+              <article class="reason-card">
+                <strong>რამდენიმე მოქმედება</strong>
+                <h3>დარეკვა, WhatsApp და ფასის მოთხოვნა ერთ გვერდზე</h3>
+                <p>
+                  ვინც დაუყოვნებლივ რეკავს, რეკავს. ვინც ჯერ ფასი უნდა, წერს WhatsApp-ზე. ვინც დოკუმენტებს ამოწმებს,
+                  ავსებს მოკლე მოთხოვნას. ეს ზრდის კონვერტაციას ყველა ტიპის ვიზიტორზე.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="process">
+          <div class="container">
+            <div class="section-head">
+              <div>
+                <span class="eyebrow">მარტივი პროცესი</span>
+                <h2>მოკლე და გასაგები პროცესი, რომ შეკვეთა არ გაიჭედოს</h2>
+              </div>
+              <p>
+                კონკურენტებთან ხშირად არ ჩანს რა ხდება ზარის შემდეგ. აქ პროცესი განზრახ გამჭვირვალეა, რადგან გაუგებრობა
+                ამ ნიშაში ყველაზე ხშირად აფერხებს კონვერტაციას.
+              </p>
+            </div>
+
+            <div class="process-grid">
+              <article class="process-step">
+                <div class="step-no">1</div>
+                <h3>მოკლე მოთხოვნა და შეფასება</h3>
+                <p>
+                  გვიგზავნით მისამართს, ობიექტის ტიპს, ფართის სავარაუდო ზომას და თუ გაქვთ, ამონაწერს ან არსებულ ნახაზს.
+                  პასუხად იღებთ სამუშაო სქემას და ფასწარმოქმნის ლოგიკას.
+                </p>
+              </article>
+              <article class="process-step">
+                <div class="step-no">2</div>
+                <h3>ადგილზე გასვლა</h3>
+                <p>
+                  სპეციალისტი მოდის ობიექტზე შეთანხმებულ დროს და აფიქსირებს რეალურ მონაცემებს. მიზანია არა სავარაუდო,
+                  არამედ ფაქტობრივი მდგომარეობის დაფიქსირება.
+                </p>
+              </article>
+              <article class="process-step">
+                <div class="step-no">3</div>
+                <h3>დამუშავება და კონტროლი</h3>
+                <p>
+                  მიღებული მონაცემები მუშავდება, მოწმდება შიდა ლოგიკით და მზადდება იმ ფორმატში, რასაც კონკრეტული ამოცანა
+                  ითხოვს: აზომვითი ნახაზი, აზომვის გეგმა, გეოდეზიური მასალა ან ტოპოგრაფიული ფაილი.
+                </p>
+              </article>
+              <article class="process-step">
+                <div class="step-no">4</div>
+                <h3>გადაცემა და მხარდაჭერა</h3>
+                <p>
+                  მასალას იღებთ ციფრულად და საჭიროების შემთხვევაში დამატებითი განმარტებებით. მიზანია რომ მიღებული
+                  ფაილი რეალურად გამოიყენოთ და არა უბრალოდ შეინახოთ.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="results">
+          <div class="container">
+            <div class="section-head">
+              <div>
+                <span class="eyebrow">ტიპური შედეგები</span>
+                <h2>შედეგები, რასაც მომხმარებელი რეალურად ელოდება</h2>
+              </div>
+              <p>
+                რადგან ეს გვერდი არ ეფუძნება ხელოვნურად შექმნილ “ჩვენი კლიენტები” ბლოკებს, პორტფოლიო წარმოდგენილია
+                შედეგების ფორმატით: რა პრობლემა ჰქონდათ და რა მიიღო დამკვეთმა.
+              </p>
+            </div>
+
+            <div class="result-grid">
+              <article class="result-card">
+                <span class="result-kicker">ბინის აზომვა</span>
+                <h3>ბინა რეგისტრაციის ან ფართის დაზუსტების წინ</h3>
+                <p>
+                  ხშირი სცენარია, როცა რეესტრის მონაცემი, გაყიდვის პირობები ან ფაქტობრივი ფართი ერთმანეთს არ ემთხვევა.
+                  ასეთ დროს სჭირდება ზუსტი აზომვა და მკაფიო შიდა ნახაზი, რომელსაც ადვილად კითხულობს ყველა მხარე.
+                </p>
+                <div class="result-meta">
+                  <ul class="mini-list">
+                    <li>შიდა განლაგება და ზომები ერთ ფაილში</li>
+                    <li>ფართობის მკაფიო გადამოწმება</li>
+                    <li>დისტანციური კოორდინაცია უცხოეთიდანაც</li>
+                  </ul>
+                </div>
+              </article>
+              <article class="result-card">
+                <span class="result-kicker">სახლი და დამხმარე ფართები</span>
+                <h3>კერძო სახლი, სარდაფი, ავტოფარეხი ან სხვენი</h3>
+                <p>
+                  კონკურენტების საიტებზეც ეს მოთხოვნა ხშირად მეორდება, რადგან სწორედ დამხმარე ფართებზე ჩნდება ბევრი
+                  ტექნიკური და დოკუმენტური კითხვა. აქ შედეგი არის ზუსტი მოცემულობა და არა სიტყვიერი ახსნა.
+                </p>
+                <div class="result-meta">
+                  <ul class="mini-list">
+                    <li>მრავალსივრციანი ობიექტის მკაფიო გადანაწილება</li>
+                    <li>დამტკიცების ან ცვლილების პროცესისთვის გამოსადეგი მასალა</li>
+                    <li>მარტივი კომუნიკაცია არქიტექტორთან ან იურისტთან</li>
+                  </ul>
+                </div>
+              </article>
+              <article class="result-card">
+                <span class="result-kicker">გეოდეზია და ტოპო</span>
+                <h3>ნაკვეთის საზღვრები, დაკვალვა და ტოპო მონაცემები</h3>
+                <p>
+                  მიწაზე ყველაზე ძვირი შეცდომა არის საზღვრის ან ნიშნულის არასწორი ინტერპრეტაცია. ამიტომ აქ აქცენტი
+                  კეთდება გადამოწმებულ საკოორდინატო ლოგიკაზე, ტოპო ინფორმაციაზე და ადგილზე სწორ მონიშვნაზე.
+                </p>
+                <div class="result-meta">
+                  <ul class="mini-list">
+                    <li>კუთხეების და წერტილების ადგილზე გადატანა</li>
+                    <li>რელიეფის და სიტუაციური ელემენტების დაფიქსირება</li>
+                    <li>მშენებლობის წინ უკეთესი გადაწყვეტილება ნაკლებ რისკზე</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+        <section class="section" id="quote">
+          <div class="container quote-grid">
+            <article class="quote-card dark">
+              <span class="quote-highlight">ფასის მოთხოვნა</span>
+              <h2>ფასი არ უნდა იყოს ბუნდოვანი. წინასწარი შეფასება უნდა იყოს სწრაფი.</h2>
+              <p>
+                მომხმარებელი, რომელიც ამ ნიშაში უკვე გეძებთ, იშვიათად კითხულობს “კომპანიის ისტორიას” პირველივე
+                წუთებში. ის ეძებს ორ პასუხს: რა დამიჯდება და როდის იქნებით მზად. ეს ბლოკი სწორედ ამისთვის არის.
+              </p>
+              <div class="quote-badges">
+                <span class="quote-badge">უფასო კონსულტაცია</span>
+                <span class="quote-badge">WhatsApp შეფასება</span>
+                <span class="quote-badge">სასწრაფო ვადა მოთხოვნით</span>
+              </div>
+              <ul class="card-list">
+                <li>ფასი დამოკიდებულია ობიექტის ტიპზე, ფართზე, მდებარეობაზე და დოკუმენტის სირთულეზე.</li>
+                <li>დაჩქარებული მომსახურება შესაძლებელია შეთანხმებით, თუ ვადა კრიტიკულია.</li>
+                <li>თუ ზუსტი ფორმატი ჯერ არ იცით, მოთხოვნის მიხედვით განვსაზღვრავთ რა არის საჭირო.</li>
+              </ul>
+            </article>
+
+            <article class="quote-card">
+              <span class="quote-highlight">ფასზე მოქმედი ფაქტორები</span>
+              <h3>სწრაფი შეფასებისთვის გამოგვიგზავნეთ:</h3>
+              <ul class="card-list">
+                <li>ობიექტის ტიპი: ბინა, სახლი, კომერციული ფართი, ნაკვეთი.</li>
+                <li>მდებარეობა: უბანი, ქუჩა ან მინიმუმ რაიონი თბილისში.</li>
+                <li>სავარაუდო ფართი ან ნაკვეთის ზომა.</li>
+                <li>საბოლოო მიზანი: რეესტრი, დიზაინი, გაყიდვა, გამიჯვნა, ტოპო, დაკვალვა.</li>
+              </ul>
+              <div class="hero-actions" style="margin-top: 22px;">
+                <a class="btn btn-primary" href="https://wa.me/995599991165">მიიღე ფასი WhatsApp-ზე</a>
+                <a class="btn btn-secondary" href="#contact">შეავსე მოთხოვნა</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="faq">
+          <div class="container">
+            <div class="section-head">
+              <div>
+                <span class="eyebrow">კითხვები</span>
+                <h2>ხშირად დასმული კითხვები: აზომვითი ნახაზი, ბინის აზომვა, გეოდეზია</h2>
+              </div>
+              <p>
+                ეს განყოფილება არა მხოლოდ ამცირებს გაყიდვამდე კითხვების რაოდენობას, არამედ ფარავს იმ საძიებო
+                მოთხოვნებსაც, რასაც ხალხი რეალურად აკრეფს Google-ში.
+              </p>
+            </div>
+
+            <div class="faq-grid">
+              <article class="faq-card">
+                <details open>
+                  <summary>რა არის აზომვითი ნახაზი და როდის მჭირდება?</summary>
+                  <p>
+                    აზომვითი ნახაზი არის ობიექტის ფაქტობრივი განლაგების და ზომების ზუსტი ასახვა. იგი ხშირად საჭიროა
+                    საჯარო რეესტრისთვის, ლეგალიზაციისთვის, ფართის დაზუსტებისთვის, გამიჯვნა-გაერთიანებისთვის,
+                    ინტერიერის დიზაინისთვის და ქონების გაყიდვა-შეფასებისთვის.
+                  </p>
+                </details>
+                <details>
+                  <summary>აკეთებთ ბინის აზომვას თბილისში ყველა უბანში?</summary>
+                  <p>
+                    დიახ. მომსახურება ორიენტირებულია თბილისზე და მოიცავს ვაკეს, საბურთალოს, დიღომს, დიდუბეს, გლდანს,
+                    ისანს, სამგორს, კრწანისს, მთაწმინდას და სხვა უბნებს. საქართველოს სხვა ქალაქებში გასვლაც შესაძლებელია
+                    შეთანხმებით.
+                  </p>
+                </details>
+                <details>
+                  <summary>თუ მჭირდება გეოდეზია, რა მონაცემები უნდა მოგაწოდოთ?</summary>
+                  <p>
+                    საკმარისია მოგვწეროთ მდებარეობა, ნაკვეთის საკადასტრო კოდი თუ გაქვთ, სამუშაოს მიზანი და რა შედეგს
+                    ელოდებით: საზღვრის დადგენა, დაკვალვა, წერტილების დასმა, ტოპო გეგმა თუ სხვა.
+                  </p>
+                </details>
+                <details>
+                  <summary>რამდენ ხანში მზადდება ბინის აზომვა ან აზომვითი ნახაზი?</summary>
+                  <p>
+                    ბევრი სტანდარტული ობიექტი მუშავდება 24-48 საათში ადგილზე გასვლის შემდეგ, თუმცა საბოლოო ვადა
+                    დამოკიდებულია ფართზე, სირთულეზე, დამხმარე სივრცეების რაოდენობაზე და იმაზე, რა ფორმატის დოკუმენტი გჭირდებათ.
+                  </p>
+                </details>
+                <details>
+                  <summary>რა განსხვავებაა ტოპოგრაფიულ გადაღებასა და ჩვეულებრივ მიწის აზომვას შორის?</summary>
+                  <p>
+                    ჩვეულებრივი მიწის აზომვა უფრო ხშირად უკავშირდება საზღვრებს და საკოორდინატო ინფორმაციას, ხოლო
+                    ტოპოგრაფიული გადაღება მოიცავს რელიეფს, ნიშნულებს, არსებულ შენობებს, გზებს, ღობეებს და სხვა ადგილზე
+                    არსებულ ელემენტებს, რაც პროექტირებისთვის მნიშვნელოვანია.
+                  </p>
+                </details>
+                <details>
+                  <summary>თუ თბილისში არ ვარ, მაინც შეიძლება შეკვეთის გაკეთება?</summary>
+                  <p>
+                    დიახ. ბევრი დამკვეთი მუშაობს დისტანციურად. WhatsApp-ით და ელფოსტით ვიღებთ მოთხოვნას, ვამოწმებთ
+                    არსებულ დოკუმენტებს, ვათანხმებთ ვიზიტს და შემდეგ გაწვდით განახლებებს ისე, რომ ადგილზე ყოფნა
+                    აუცილებელი არ იყოს.
+                  </p>
+                </details>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="contact">
+          <div class="container contact-grid">
+            <div class="contact-stack">
+              <article class="contact-card">
+                <span class="quote-highlight">კონტაქტი</span>
+                <h2>დაგვიკავშირდით დღესვე და მიიღეთ მკაფიო სამუშაო გეგმა</h2>
+                <p>
+                  საუკეთესო კონვერტაციის გზა ამ ბაზარში არის სწრაფი რეაგირება. ამიტომ საკონტაქტო ბლოკი აერთიანებს
+                  ზარს, WhatsApp-ს და მოკლე ფორმას, რომ მომხმარებელმა სასურველი არხი თვითონ აირჩიოს.
+                </p>
+                <ul class="contact-list">
+                  <li>ტელეფონი: <a href="tel:+995599991165">+995 599 99 11 65</a></li>
+                  <li>WhatsApp: <a href="https://wa.me/995599991165">შეტყობინება / ფასის მოთხოვნა</a></li>
+                  <li>ელფოსტა: <a href="mailto:topgraph.info@gmail.com">topgraph.info@gmail.com</a></li>
+                  <li>მომსახურების ზონა: თბილისი, მცხეთა, რუსთავი და სხვა მიმართულებები შეთანხმებით</li>
+                </ul>
+                <div class="btn-group">
+                  <a class="btn btn-dark" href="tel:+995599991165">დარეკვა</a>
+                  <a class="btn btn-secondary" href="https://wa.me/995599991165">WhatsApp</a>
+                </div>
+              </article>
+
+              <article class="contact-card">
+                <strong>ლოკალური ფოკუსი</strong>
+                <p>
+                  ქართული ვერსია მთლიანად ქართულადაა აწყობილი და ფოკუსირებულია ისეთ მოთხოვნებზე როგორიცაა
+                  <strong>აზომვითი ნახაზი</strong>, <strong>ბინის აზომვა</strong>, <strong>გეოდეზია</strong>,
+                  <strong>დაკვალვა</strong> და <strong>ტოპოგრაფიული გადაღება</strong>.
+                </p>
+              </article>
+            </div>
+
+            <article class="contact-card">
+              <span class="quote-highlight">ფასის მოკლე ფორმა</span>
+              <h3>მოკლე მოთხოვნა, რომელიც პირდაპირ იგზავნება WhatsApp-ზე</h3>
+              <p>
+                შეავსეთ ძირითადი დეტალები. გაგზავნის შემდეგ ავტომატურად გაიხსნება WhatsApp შეტყობინება წინასწარ
+                მომზადებული ტექსტით, რომ ლიდი არ დაიკარგოს.
+              </p>
+
+              <form class="quote-form" id="quote-form">
+                <div class="form-grid">
+                  <div class="field">
+                    <label for="name">სახელი</label>
+                    <input id="name" name="name" type="text" placeholder="მაგ: გიორგი" required />
+                  </div>
+                  <div class="field">
+                    <label for="phone">ტელეფონი</label>
+                    <input id="phone" name="phone" type="tel" placeholder="+995 5XX XX XX XX" required />
+                  </div>
+                  <div class="field">
+                    <label for="service">რომელი სერვისი გჭირდებათ?</label>
+                    <select id="service" name="service" required>
+                      <option value="">აირჩიეთ</option>
+                      <option value="აზომვითი ნახაზი">აზომვითი ნახაზი</option>
+                      <option value="ბინის ან სახლის აზომვა">ბინის ან სახლის აზომვა</option>
+                      <option value="გეოდეზია / მიწის აზომვა">გეოდეზია / მიწის აზომვა</option>
+                      <option value="ტოპოგრაფიული გადაღება">ტოპოგრაფიული გადაღება</option>
+                      <option value="დაკვალვა / წერტილების დასმა">დაკვალვა / წერტილების დასმა</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label for="location">მისამართი / უბანი</label>
+                    <input id="location" name="location" type="text" placeholder="მაგ: საბურთალო, თბილისი" required />
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="details">მოკლე აღწერა</label>
+                  <textarea
+                    id="details"
+                    name="details"
+                    placeholder="დაწერეთ ობიექტის ტიპი, სავარაუდო ფართი, ვადა და რისათვის გჭირდებათ ნახაზი ან აზომვა."
+                    required
+                  ></textarea>
+                </div>
+
+                <button class="btn btn-primary" type="submit">გაგზავნა WhatsApp-ზე</button>
+                <p class="form-note" id="form-note">
+                  თუ WhatsApp არ გაქვთ, გამოიყენეთ <a href="mailto:topgraph.info@gmail.com">ელფოსტა</a> ან
+                  <a href="tel:+995599991165">დაგვირეკეთ</a>.
+                </p>
+              </form>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-grid">
+            <article class="footer-card">
+              <img class="footer-logo" src="/assets/logo.png" alt="TopGraph logo" width="88" height="88" loading="lazy" />
+              <strong>TopGraph</strong>
+              <p>
+                პროფესიონალური აზომვითი ნახაზი, ბინის და სახლის აზომვა, გეოდეზია, მიწის საზღვრების დადგენა და
+                ტოპოგრაფიული გადაღება თბილისში. გვერდი შექმნილია სწრაფი SEO ინდექსაციის, მაღალი კონვერტაციის და
+                პრაქტიკული სანდოობისთვის.
+              </p>
+            </article>
+            <article class="footer-card">
+              <strong>შიდა ბმულები</strong>
+              <p>ძირითადი შიდა ბმულები საძიებო ოპტიმიზაციისთვის.</p>
+              <div class="service-links">
+                <ul class="footer-links">
+                  <li><a href="#as-built-drawings">აზომვითი ნახაზი</a></li>
+                  <li><a href="#apartment-measurement">ბინის აზომვა</a></li>
+                  <li><a href="#land-surveying">გეოდეზია</a></li>
+                  <li><a href="#topographic-survey">ტოპოგრაფია</a></li>
+                </ul>
+                <ul class="footer-links">
+                  <li><a href="#quote">ფასის მოთხოვნა</a></li>
+                  <li><a href="#faq">ხშირად დასმული კითხვები</a></li>
+                  <li><a href="#contact">კონტაქტი თბილისში</a></li>
+                  <li><a href="#top">მთავარზე დაბრუნება</a></li>
+                </ul>
+              </div>
+            </article>
+            <article class="footer-card">
+              <strong>დამატებითი მოთხოვნები</strong>
+              <p>დამატებითი მოთხოვნები, რომლებსაც ეს გვერდი ფარავს.</p>
+              <ul class="footer-links">
+                <li>სიტუაციური ნახაზი</li>
+                <li>გამიჯვნა და გაერთიანება</li>
+                <li>დაკვალვა და წერტილების დასმა</li>
+                <li>რეესტრისთვის მზად ნახაზი</li>
+                <li>მიწის აზომვა თბილისში</li>
+                <li>ტოპოგრაფიული ნახაზი</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="footer-bottom">
+            <span>© 2026 TopGraph. ყველა უფლება დაცულია.</span>
+            <span>თბილისი, საქართველო • აზომვითი ნახაზი • ბინის აზომვა • გეოდეზია</span>
+          </div>
+        </div>
+      </footer>
+
+      <div class="mobile-bar" aria-label="Quick mobile actions">
+        <a href="tel:+995599991165">დარეკვა</a>
+        <a href="https://wa.me/995599991165">WhatsApp</a>
+        <a href="#contact">ფასის მოთხოვნა</a>
+      </div>
+    </div>
+
+    <script>
+      (function () {
+        var body = document.body;
+        var form = document.getElementById("quote-form");
+        var note = document.getElementById("form-note");
+        var whatsappNumber = "995599991165";
+        var menuToggle = document.querySelector(".menu-toggle");
+        var mobileMenu = document.getElementById("mobile-menu");
+        var menuCloseTriggers = document.querySelectorAll("[data-menu-close]");
+        var mobileMenuLinks = document.querySelectorAll(".mobile-menu a");
+
+        function setMenuState(isOpen) {
+          if (!menuToggle || !mobileMenu) {
+            return;
+          }
+
+          body.classList.toggle("menu-open", isOpen);
+          menuToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+          menuToggle.setAttribute("aria-label", isOpen ? "მენიუს დახურვა" : "მენიუს გახსნა");
+          mobileMenu.setAttribute("aria-hidden", isOpen ? "false" : "true");
+        }
+
+        if (menuToggle && mobileMenu) {
+          menuToggle.addEventListener("click", function () {
+            setMenuState(menuToggle.getAttribute("aria-expanded") !== "true");
+          });
+
+          menuCloseTriggers.forEach(function (trigger) {
+            trigger.addEventListener("click", function () {
+              setMenuState(false);
+            });
+          });
+
+          mobileMenuLinks.forEach(function (link) {
+            link.addEventListener("click", function () {
+              setMenuState(false);
+            });
+          });
+
+          document.addEventListener("keydown", function (event) {
+            if (event.key === "Escape") {
+              setMenuState(false);
+            }
+          });
+
+          window.addEventListener("resize", function () {
+            if (window.innerWidth > 880) {
+              setMenuState(false);
+            }
+          });
+        }
+
+        if (!form) {
+          return;
+        }
+
+        form.addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          var name = document.getElementById("name").value.trim();
+          var phone = document.getElementById("phone").value.trim();
+          var service = document.getElementById("service").value.trim();
+          var location = document.getElementById("location").value.trim();
+          var details = document.getElementById("details").value.trim();
+
+          var message = [
+            "გამარჯობა, მაინტერესებს მომსახურება.",
+            "სახელი: " + name,
+            "ტელეფონი: " + phone,
+            "სერვისი: " + service,
+            "მისამართი/უბანი: " + location,
+            "დეტალები: " + details
+          ].join("\n");
+
+          var link = "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(message);
+          note.textContent = "იხსნება WhatsApp შეტყობინება...";
+          window.location.href = link;
+        });
+      })();
+    </script>
+  </body>
+</html>
