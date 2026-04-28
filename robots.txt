@@ -23,4 +23,4 @@ Disallow:
 User-agent: *
 Disallow: 
 Disallow: /cgi-bin/
-Sitemap: https://topgraph.ge/
+Sitemap: https://topgraph.ge/sitemap.XML
